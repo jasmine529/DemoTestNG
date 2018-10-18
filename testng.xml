@@ -1,0 +1,55 @@
+<!--<suite name="TestAll">-->
+    <!--<test name = "case1">-->
+        <!--<classes>-->
+            <!--<class name="com.jas.TestDBConnection"/>-->
+            <!--<class name="com.jas.DBConfig"/>-->
+            <!--<class name="com.jas.TestConfiguration"/>-->
+        <!--</classes>-->
+    <!--</test>-->
+    <!--<test name = "case2">-->
+        <!--<classes>-->
+            <!--<class name="com.jas.TestDBConnection"/>-->
+            <!--<class name="com.jas.DBConfig"/>-->
+        <!--</classes>-->
+    <!--</test>-->
+<!--</suite>-->
+<!--<suite name = "TestAll2">-->
+    <!--&lt;!&ndash;<test name = "final">&ndash;&gt;-->
+        <!--&lt;!&ndash;<classes>&ndash;&gt;-->
+            <!--&lt;!&ndash;<class name="com.jas.TestSelenium"/>&ndash;&gt;-->
+            <!--&lt;!&ndash;<class name="com.jas.TestGroup"/>&ndash;&gt;-->
+        <!--&lt;!&ndash;</classes>&ndash;&gt;-->
+    <!--&lt;!&ndash;</test>&ndash;&gt;-->
+    <!--<test name = "selenium">-->
+        <!--<groups>-->
+            <!--<run>-->
+                <!--<include name = "selenium-test"/>-->
+            <!--</run>-->
+        <!--</groups>-->
+        <!--<classes>-->
+            <!--<class name="com.jas.TestSelenium"/>-->
+            <!--<class name="com.jas.TestGroup"/>-->
+        <!--</classes>-->
+    <!--</test>-->
+<!--</suite>-->
+<!--<suite name="TestDependency">-->
+    <!--<test name="TestCase1">-->
+        <!--<classes>-->
+            <!--<class name="com.jas2.TestApp"></class>-->
+            <!--<class name="com.jas2.TestDatabase"></class>-->
+            <!--<class name="com.jas2.TestServer"></class>-->
+        <!--</classes>-->
+    <!--</test>-->
+<!--</suite>-->
+<suite name="test-parameter">
+    <test name="example">
+        <groups>
+            <run>
+                <inculde name="groupA"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.jas3.TestParameterDataProvider4"/>
+        </classes>
+    </test>
+</suite>
