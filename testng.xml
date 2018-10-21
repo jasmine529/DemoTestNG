@@ -41,15 +41,30 @@
         <!--</classes>-->
     <!--</test>-->
 <!--</suite>-->
-<suite name="test-parameter">
-    <test name="example">
-        <groups>
-            <run>
-                <inculde name="groupA"/>
-            </run>
-        </groups>
+<!--<suite name="test-parameter">-->
+    <!--<test name="example">-->
+        <!--<groups>-->
+            <!--<run>-->
+                <!--<inculde name="groupA"/>-->
+            <!--</run>-->
+        <!--</groups>-->
+        <!--<classes>-->
+            <!--<class name="com.jas3.TestParameterDataProvider4"/>-->
+        <!--</classes>-->
+    <!--</test>-->
+<!--</suite>-->
+<!--<suite name = "Test-method Suite" parallel="methods" thread-count="2" verbose="1">-->
+    <!--<test name = "Test-method test" group-by-instance="true">-->
+        <!--<classes>-->
+            <!--<class name="com.jas4.ParalleMethodTest"/>-->
+        <!--</classes>-->
+    <!--</test>-->
+<!--</suite>-->
+<suite name="Test-class Suite" parallel="classes" thread-count="2" >
+    <test name="Test-class test" >
         <classes>
-            <class name="com.jas3.TestParameterDataProvider4"/>
+            <class name="com.jas4.ParallelClassesTestOne" />
+            <class name="com.jas4.ParallelClassesTestTwo" />
         </classes>
     </test>
 </suite>
